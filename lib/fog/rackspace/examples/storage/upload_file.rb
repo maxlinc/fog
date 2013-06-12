@@ -4,17 +4,6 @@
 
 require 'rubygems' #required for Ruby 1.8.x
 require 'fog'
-require 'optparse'
-
-options = {}
-OptionParser.new do |opts|
-  opts.banner = "Usage: upload_file.rb [options]"
-
-  opts.on("-d", "--dir DIRECTORY",
-      "Name of directory to create") do |dir|
-    options[:directory_name] = dir
-  end
-end.parse!
 
 def get_user_input(prompt)
   print "#{prompt}: "
@@ -42,7 +31,7 @@ service = Fog::Storage.new({
   })
   
 # prompt for directory name
-directory_name = options[:directory_name] || get_user_input("\nEnter name of directory to create")
+directory_name = get_user_input "\nEnter name of directory to create"
 
 # create directory with CDN service
 directory = service.directories.create :key => directory_name, :public => true
