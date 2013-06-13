@@ -1,7 +1,13 @@
 require 'rspec'
+require 'rspec/retry'
 require 'open3'
 require 'tempfile'
 require 'fog'
+
+RSpec.configure do |config|
+  config.verbose_retry = true # show retry status in spec process
+  config.default_retry_count = 3
+end
 
 examples = Dir['*/*.rb']
 
