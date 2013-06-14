@@ -22,8 +22,6 @@ commands = {
   # "compute_v2/resize_server.rb" => "0\n4\nR",
   "compute_v2/server_attachments.rb" => "0\nmy_volume_#{pid}",
   "block_storage/create_volume.rb" => "1\n100\nanother_volume_#{pid}",
-  "block_storage/create_snapshot.rb" => "0\n0\nmy_snapshot_#{pid}",
-  "block_storage/delete_volume.rb" => "0",
   "compute_v2/create_image.rb" => "0\nmy_image_#{pid}",
   "compute_v2/delete_image.rb" => "0",
   "compute_v2/detach_volume.rb" => "0\n0\nn",
@@ -33,10 +31,12 @@ commands = {
   "storage/delete_directory.rb" => "0",
   "storage/upload_file.rb" => "lorem_#{pid}",
   "storage/upload_large_files.rb" => "0\n../../../../changelog.txt",
+  "storage/storage_metadata.rb" => "",
+  "block_storage/create_snapshot.rb" => "0\n0\nmy_snapshot_#{pid}",
+  "block_storage/delete_volume.rb" => "0",
+  "compute_v2/delete_server.rb" => "0",
   "storage/download_file.rb" => "0\n0",
   "storage/delete_file.rb" => "0\n0",
-  "storage/storage_metadata.rb" => "",
-  "compute_v2/delete_server.rb" => "0",
 }
 
 describe "Examples" do
