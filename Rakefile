@@ -46,12 +46,18 @@ end
 #############################################################################
 
 GEM_NAME = "#{name}"
-task :default => [:test, 'coveralls:push']
+task :default => :test
+task :travis  => ['test:travis', 'coveralls:push']
 
 require "tasks/test_task"
 Fog::Rake::TestTask.new
 
 namespace :test do
+  task :travis do
+    [true].each do |mock|
+      sh("export FOG_MOCK=#{mock} && bundle exec shindont")
+    end
+  end
   task :vsphere do
     [true].each do |mock|
       sh("export FOG_MOCK=#{mock} && bundle exec shindont tests/vsphere")
