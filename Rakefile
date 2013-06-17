@@ -47,7 +47,7 @@ end
 
 GEM_NAME = "#{name}"
 task :default => :test
-task :travis  => ['test:travis', 'coveralls:push']
+task :travis  => ['test:travis', 'coveralls_push_workaround']
 
 require "tasks/test_task"
 Fog::Rake::TestTask.new
@@ -193,5 +193,10 @@ end
 require "tasks/changelog_task"
 Fog::Rake::ChangelogTask.new
 
-require 'coveralls/rake/task'
-Coveralls::RakeTask.new
+task :coveralls_push_workaround do
+  if Gem::Version.new(RUBY_VERSION) > Gem::Version.new('1.9')
+    require 'coveralls/rake/task'
+    Coveralls::RakeTask.new
+    Rake::Task["coveralls:push"].invoke
+  end
+end
