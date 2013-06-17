@@ -7,5 +7,5 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
 ]
 SimpleCov.command_name "shindo"
 SimpleCov.start do
-  add_filter 'app/secrets'
+  add_filter '/signed_params_tests'
 end
