@@ -46,7 +46,7 @@ end
 #############################################################################
 
 GEM_NAME = "#{name}"
-task :default => :test
+task :default => [:test, 'coveralls:push']
 
 require "tasks/test_task"
 Fog::Rake::TestTask.new
@@ -186,3 +186,6 @@ end
 
 require "tasks/changelog_task"
 Fog::Rake::ChangelogTask.new
+
+require 'coveralls/rake/task'
+Coveralls::RakeTask.new

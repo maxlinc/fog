@@ -1,3 +1,9 @@
+require 'simplecov'
+require 'coveralls'
+
+SimpleCov.command_name "shindo"
+SimpleCov.start
+
 ENV['FOG_RC']         = ENV['FOG_RC'] || File.expand_path('../.fog', __FILE__)
 ENV['FOG_CREDENTIAL'] = ENV['FOG_CREDENTIAL'] || 'default'
 
