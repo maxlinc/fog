@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute::RackspaceV2 | address requests', ['rackspace']) do
 
   @service = Fog::Compute.new(:provider => 'Rackspace', :version => 'V2')

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:digitalocean] | get_ssh_keys request', ['digitalocean', 'compute']) do
 
   @ssh_key_format = {

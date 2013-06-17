@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Storage[:rackspace] | container requests', ["rackspace"]) do
 
   @container_format = [String]

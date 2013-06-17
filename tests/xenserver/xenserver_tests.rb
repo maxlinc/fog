@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver]', ['xenserver']) do
 
   tests("Login") do

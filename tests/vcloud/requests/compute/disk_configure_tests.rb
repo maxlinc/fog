@@ -1,4 +1,3 @@
-require 'shindo_helper'
 begin
   require 'rspec'
   require 'rspec/mocks'

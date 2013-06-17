@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog#timeout', 'core') do
   tests('timeout').returns(600) do
     Fog.timeout

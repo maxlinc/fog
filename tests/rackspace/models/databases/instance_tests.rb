@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Rackspace::Databases | instance', ['rackspace']) do
 
   pending if Fog.mocking?

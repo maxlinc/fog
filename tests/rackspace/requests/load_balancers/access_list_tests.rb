@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Rackspace::LoadBalancers | access_lists_tests', ['rackspace']) do
 
   pending if Fog.mocking?

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::AWS[:dynamodb] | table requests', ['aws']) do
 
   @table_format = {

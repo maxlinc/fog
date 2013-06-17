@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog CurrentMachine', 'core') do
 
   pending unless Fog.mock?

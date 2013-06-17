@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::SQS | message requests', ['aws']) do
 
   tests('success') do

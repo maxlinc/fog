@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Network[:openstack] | subnet", ['openstack']) do
 
   tests('success') do

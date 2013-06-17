@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Network[:openstack] | router requests', ['openstack']) do
 
   @router_format = {

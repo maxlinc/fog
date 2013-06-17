@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Storage[:local] | file', ["local"]) do
 
   pending if Fog.mocking?

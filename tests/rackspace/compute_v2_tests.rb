@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute::RackspaceV2', ['rackspace']) do
   
   def assert_method(url, method)

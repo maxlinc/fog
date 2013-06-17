@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | subnet requests', ['aws']) do
 
   @subnets_format = {

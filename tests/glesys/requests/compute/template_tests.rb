@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:glesys] | template requests', ['glesys']) do
 
   tests('success') do

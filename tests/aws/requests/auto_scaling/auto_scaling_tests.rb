@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::AutoScaling | auto_scaling_tests', ['aws', 'auto_scaling']) do
   @asg_name = 'fog-test-asg'
   @lc_name = 'fog-test-lc'

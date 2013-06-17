@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Image[:openstack] | image", ['openstack']) do
 
   tests('success') do

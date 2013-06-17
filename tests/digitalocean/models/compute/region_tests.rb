@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:digitalocean] | region model", ['digitalocean', 'compute']) do
 
   service = Fog::Compute[:digitalocean]

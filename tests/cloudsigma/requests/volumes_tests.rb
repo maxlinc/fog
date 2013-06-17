@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:cloudsigma] | volume requests', ['cloudsigma']) do
 
   @volume_format = {

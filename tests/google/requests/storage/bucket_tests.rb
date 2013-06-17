@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Storage[:google] | bucket requests', ["google"]) do
 
   tests('success') do

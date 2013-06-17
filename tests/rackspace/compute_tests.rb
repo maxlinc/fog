@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Rackspace | Compute', ['rackspace']) do
 
   def assert_method(url, method)

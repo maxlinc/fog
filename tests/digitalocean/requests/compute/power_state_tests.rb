@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:digitalocean] | power on/off/shutdown requests', 
              ['digitalocean', 'compute']) do
 

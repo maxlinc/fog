@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Identity[:openstack] | ec2_credentials", ['openstack']) do
   before do
     openstack = Fog::Identity[:openstack]

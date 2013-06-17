@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::CDN[:aws] | CDN requests', ['aws', 'cdn']) do
 
   @cf_connection = Fog::CDN[:aws]

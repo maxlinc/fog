@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:brightbox]', ['brightbox']) do
 
   @test_service = Fog::Compute[:brightbox]

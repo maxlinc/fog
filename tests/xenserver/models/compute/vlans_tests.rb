@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver] | Vlans collection', ['xenserver']) do
 
   service = Fog::Compute[:xenserver]

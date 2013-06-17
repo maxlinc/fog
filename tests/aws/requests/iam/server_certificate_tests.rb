@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::IAM | server certificate requests', ['aws']) do
   @key_name = 'fog-test'
   @key_name_chained = 'fog-test-chained'

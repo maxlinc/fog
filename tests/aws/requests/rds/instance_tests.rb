@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::RDS | instance requests', ['aws', 'rds']) do
   # Disabled due to https://github.com/fog/fog/1546
   pending

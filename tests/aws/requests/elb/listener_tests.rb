@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::ELB | listener_tests', ['aws', 'elb']) do
   @load_balancer_id = 'fog-test-listener'
   @key_name = 'fog-test'

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Brightbox::OAuth2", ["brightbox"]) do
 
   tests("CredentialSet") do

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ibm] | instance requests', ['ibm']) do
 
   @instance_format = {

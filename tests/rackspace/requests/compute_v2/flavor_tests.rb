@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute::RackspaceV2 | flavor_tests', ['rackspace']) do
 
   flavor_format = {

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:cloudstack] | zone requests', ['cloudstack']) do
 
   @zones_format = {

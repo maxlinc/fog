@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Identity[:openstack] | user requests', ['openstack']) do
 
   @user_format = {

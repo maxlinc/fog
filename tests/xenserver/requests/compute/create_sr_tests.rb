@@ -1,4 +1,3 @@
-require 'shindo_helper'
 #
 # @rubiojr
 #

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:cloudstack] | ssh key pairs requests', ['cloudstack']) do
 
   @ssh_keys_format = {

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('OpenStack | versions', ['openstack']) do
   begin
     @old_mock_value = Excon.defaults[:mock]

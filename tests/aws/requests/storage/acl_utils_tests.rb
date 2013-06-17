@@ -1,4 +1,3 @@
-require 'shindo_helper'
 require 'fog/aws/requests/storage/acl_utils'
 
 Shindo.tests('Fog::Storage::AWS | ACL utils', ["aws"]) do

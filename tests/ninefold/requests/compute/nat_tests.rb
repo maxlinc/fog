@@ -1,4 +1,3 @@
-require 'shindo_helper'
 ## Note:
 # If needed, these tests will create a new VM and public IP address. Because this is expensive, you
 # can optionally specify VM_ID and IP_ID as environment variables, and we will use those. Note:

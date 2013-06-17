@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:vsphere] | servers collection', ['vsphere']) do
 
   servers = Fog::Compute[:vsphere].servers

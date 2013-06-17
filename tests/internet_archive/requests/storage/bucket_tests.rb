@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Storage[:internetarchive] | bucket requests', ["internet_archive"]) do
   @ia_bucket_name = 'fogbuckettests-' + Time.now.to_i.to_s(32)
 

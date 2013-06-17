@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::AutoScaling | instances', ['aws', 'auto_scaling_m']) do
 
   pending # FIXME: instance#save is not defined

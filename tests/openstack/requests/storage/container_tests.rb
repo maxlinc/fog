@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Storage[:openstack] | container requests', ["openstack"]) do
 
   @container_format = [String]

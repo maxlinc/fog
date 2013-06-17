@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:libvirt] | nic model', ['libvirt']) do
 
   nic = Fog::Compute[:libvirt].servers.all.select{|v| v.name =~ /^fog/}.first.nics.first

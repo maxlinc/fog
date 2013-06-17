@@ -1,4 +1,3 @@
-require 'shindo_helper'
 for provider, config in compute_providers
 
   next if [:ecloud].include?(provider)

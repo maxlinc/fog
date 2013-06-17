@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:libvirt] | networks collection', ['libvirt']) do
 
   networks = Fog::Compute[:libvirt].networks

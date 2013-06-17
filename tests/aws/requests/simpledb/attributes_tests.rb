@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::SimpleDB | attributes requests', ['aws']) do
 
   @domain_name = "fog_domain_#{Time.now.to_f.to_s.gsub('.','')}"

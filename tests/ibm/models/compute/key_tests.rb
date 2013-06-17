@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ibm] | key', ['ibm']) do
 
   tests('success') do

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("AWS::RDS | tagging", ['aws', 'rds']) do
 
   @server = Fog::AWS[:rds].servers.create(rds_default_server_params)

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::RDS | parameter requests', ['aws', 'rds']) do
   tests('success') do
     pending if Fog.mocking?

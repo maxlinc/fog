@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ovirt] | clusters collection', ['ovirt']) do
 
   clusters = Fog::Compute[:ovirt].clusters

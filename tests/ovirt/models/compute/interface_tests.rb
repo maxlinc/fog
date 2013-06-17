@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ovirt] | interface model', ['ovirt']) do
 
   interfaces = Fog::Compute[:ovirt].servers.last.interfaces

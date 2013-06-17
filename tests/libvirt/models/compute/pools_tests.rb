@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:libvirt] | pools request', ['libvirt']) do
 
   pools = Fog::Compute[:libvirt].pools

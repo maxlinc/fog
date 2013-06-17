@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:vsphere] | list_virtual_machines request', ['vsphere']) do
 
   tests("When listing all machines") do

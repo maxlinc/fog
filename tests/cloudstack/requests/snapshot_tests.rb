@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:cloudstack] | snapshot requests', ['cloudstack']) do
 
   @snapshots_format = {

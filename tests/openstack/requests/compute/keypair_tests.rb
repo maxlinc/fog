@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:openstack] | keypair requests', ['openstack']) do
 
   @keypair_format = {

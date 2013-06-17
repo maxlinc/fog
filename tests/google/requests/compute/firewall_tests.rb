@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:google] | firewall requests', ['google']) do
 
   @google = Fog::Compute[:google]

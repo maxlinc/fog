@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver] | set_attribute request', ['xenserver']) do
 
   # Setup cleanup

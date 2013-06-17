@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::ELB | policy_tests', ['aws', 'elb']) do
   @load_balancer_id = 'fog-test-policies'
 

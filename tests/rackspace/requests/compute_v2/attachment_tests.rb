@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute::RackspaceV2 | attachment_tests', ['rackspace']) do
   compute_service       = Fog::Compute::RackspaceV2.new
   block_storage_service = Fog::Rackspace::BlockStorage.new

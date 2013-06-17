@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:iam] | access_keys", ['aws','iam']) do
 
   Fog.mock!

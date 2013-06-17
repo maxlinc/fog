@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute::RackspaceV2 | network', ['rackspace']) do
   service = Fog::Compute::RackspaceV2.new
 

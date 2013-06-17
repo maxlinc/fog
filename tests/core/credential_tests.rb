@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests do
   before do
     @old_home = ENV['HOME']

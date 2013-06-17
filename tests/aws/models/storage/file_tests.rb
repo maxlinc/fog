@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Storage[:aws] | file", ["aws"]) do
 
   require 'tempfile'

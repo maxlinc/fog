@@ -1,4 +1,3 @@
-require 'shindo_helper'
 require 'fog/rackspace/models/storage/metadata'
 require 'fog/rackspace/models/storage/directory'
 require 'fog/rackspace/models/storage/file'

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 # encoding: utf-8
 
 Shindo.tests('InternetArchive | signed_params', ['internet_archive']) do

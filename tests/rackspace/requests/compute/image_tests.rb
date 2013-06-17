@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:rackspace] | image requests', ['rackspace']) do
 
   @image_format = {

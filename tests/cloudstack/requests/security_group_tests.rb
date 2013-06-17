@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:cloudstack] | security group requests', ['cloudstack']) do
 
   @security_groups_format = {

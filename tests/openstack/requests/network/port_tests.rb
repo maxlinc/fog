@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Network[:openstack] | port requests', ['openstack']) do
 
   @port_format = {

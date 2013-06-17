@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | security group requests', ['aws']) do
   @create_security_group_format = {
     'requestId' => String,

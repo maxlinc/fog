@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | spot datafeed subscription requests', ['aws']) do
   @spot_datafeed_subscription_format = {
     'spotDatafeedSubscription' => {

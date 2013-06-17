@@ -1,4 +1,3 @@
-require 'shindo_helper'
 require 'fog/serverlove/util/compute/password_generator'
 
 Shindo.tests('Fog::Compute::Serverlove::PasswordGenerator | generate password', ['serverlove']) do

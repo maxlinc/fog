@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::CDN[:hp] | container requests", ['hp']) do
 
   @cdn_containers_format = [{

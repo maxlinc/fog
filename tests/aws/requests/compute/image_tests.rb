@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | image requests', ['aws']) do
   @describe_images_format = {
     'imagesSet'    => [{

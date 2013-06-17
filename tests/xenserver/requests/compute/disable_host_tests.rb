@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver] | disable_host request', ['xenserver']) do
 
   compute = Fog::Compute[:xenserver]

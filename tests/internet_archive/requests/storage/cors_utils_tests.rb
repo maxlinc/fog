@@ -1,4 +1,3 @@
-require 'shindo_helper'
 require 'fog/internet_archive/requests/storage/cors_utils'
 
 Shindo.tests('Fog::Storage::InternetArchive | CORS utils', ["internet_archive"]) do

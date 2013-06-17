@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ovirt] | servers collection', ['ovirt']) do
 
   servers = Fog::Compute[:ovirt].servers

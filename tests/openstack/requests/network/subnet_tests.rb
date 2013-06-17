@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Network[:openstack] | subnet requests', ['openstack']) do
 
   @subnet_format = {

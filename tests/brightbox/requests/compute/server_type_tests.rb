@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:brightbox] | server type requests', ['brightbox']) do
 
   tests('success') do

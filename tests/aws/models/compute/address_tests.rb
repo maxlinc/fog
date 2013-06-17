@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:aws] | address", ['aws']) do
 
   model_tests(Fog::Compute[:aws].addresses, {}, true) do

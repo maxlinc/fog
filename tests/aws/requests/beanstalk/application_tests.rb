@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::ElasticBeanstalk | application_tests', ['aws', 'beanstalk']) do
 
   def unique_name(prefix)

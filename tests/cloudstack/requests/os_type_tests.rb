@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:cloudstack] | os type requests', ['cloudstack']) do
 
   @os_types_format = {

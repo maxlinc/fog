@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:joyent] | network requests", ["joyent"]) do
   @provider = Fog::Compute[:joyent]
   @network_format = {

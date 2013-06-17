@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver] | VIF model', ['xenserver']) do
 
   vifs = Fog::Compute[:xenserver].vifs

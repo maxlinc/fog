@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver] | PIF model', ['xenserver']) do
 
   pifs = Fog::Compute[:xenserver].pifs

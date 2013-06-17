@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Rackspace', ['rackspace']) do
 
   tests('normalize_url') do

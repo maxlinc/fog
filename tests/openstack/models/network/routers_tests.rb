@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Network[:openstack] | routers", ['openstack']) do
   @router = Fog::Network[:openstack].routers.create(
     :name => 'router_name',

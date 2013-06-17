@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | region requests', ['aws']) do
 
   @regions_format = {

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:libvirt] | create_domain request", 'libvirt') do
 
   compute = Fog::Compute[:libvirt]

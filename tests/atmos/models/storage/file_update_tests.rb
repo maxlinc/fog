@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Storage[:atmos] | nested directories", ['atmos']) do
 
   unless Fog.mocking?

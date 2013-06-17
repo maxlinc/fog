@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver] | get_record request', ['xenserver']) do
 
   compute = Fog::Compute[:xenserver]

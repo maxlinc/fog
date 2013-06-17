@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Network[:openstack] | router", ['openstack']) do
 
   tests('success') do

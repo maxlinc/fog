@@ -1,4 +1,3 @@
-require 'shindo_helper'
 def security_group_tests(connection, params, mocks_implemented = true)
   model_tests(connection.security_groups, params[:security_group_attributes], mocks_implemented) do
     if Fog.mocking? && !mocks_implemented

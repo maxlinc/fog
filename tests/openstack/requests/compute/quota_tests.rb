@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:openstack] | quota requests', ['openstack']) do
 
   @tenant_id = Fog::Compute[:openstack].list_tenants.body['tenants'].first['id']

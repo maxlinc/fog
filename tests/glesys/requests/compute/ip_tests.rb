@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:glesys] | ip requests', ['glesys']) do
 
   @free_ip = nil

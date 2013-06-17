@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | availability zone requests', ['aws']) do
 
   @availability_zones_format = {

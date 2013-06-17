@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:vsphere]', ['vsphere']) do
 
   compute = Fog::Compute[:vsphere]

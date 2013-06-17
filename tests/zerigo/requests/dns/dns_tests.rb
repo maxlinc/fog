@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::DNS[:zerigo] | DNS requests', ['zerigo', 'dns']) do
 
   # tests assume have a free acccount - ie need to limit # of zones to max of 3

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Volume[:openstack]', ['openstack', 'volume']) do
 
   volume = Fog::Volume[:openstack]

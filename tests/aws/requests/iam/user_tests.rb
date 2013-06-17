@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::IAM | user requests', ['aws']) do
 
   Fog::AWS[:iam].create_group('fog_user_tests')

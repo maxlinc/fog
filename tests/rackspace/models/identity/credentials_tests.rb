@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Rackspace::Identity | credentials', ['rackspace']) do
 
   pending if Fog.mocking?

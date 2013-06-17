@@ -1,4 +1,3 @@
-require 'shindo_helper'
 require 'securerandom'
 
 Shindo.tests('Bluebox::BLB | lb_tests', ['bluebox']) do

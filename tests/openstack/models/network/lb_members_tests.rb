@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Network[:openstack] | lb_members", ['openstack']) do
   @lb_member = Fog::Network[:openstack].lb_members.create(:pool_id => 'pool_id',
                                                           :address => '10.0.0.1',

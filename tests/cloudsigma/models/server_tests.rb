@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:cloudsigma] | server model', ['cloudsigma']) do
   service = Fog::Compute[:cloudsigma]
   servers = Fog::Compute[:cloudsigma].servers

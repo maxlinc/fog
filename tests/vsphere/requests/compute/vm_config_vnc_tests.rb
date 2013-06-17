@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:vsphere] | vm_config_vnc request', ['vsphere']) do
 
   compute = Fog::Compute[:vsphere]

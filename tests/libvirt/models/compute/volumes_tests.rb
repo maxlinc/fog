@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:libvirt] | volumes collection', ['libvirt']) do
 
   volumes = Fog::Compute[:libvirt].volumes

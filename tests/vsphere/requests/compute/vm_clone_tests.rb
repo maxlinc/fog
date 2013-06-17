@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:vsphere] | vm_clone request", 'vsphere') do
   # require 'guid'
   compute = Fog::Compute[:vsphere]

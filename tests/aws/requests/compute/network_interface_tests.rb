@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | network interface requests', ['aws']) do
 
   @network_interface_format = {

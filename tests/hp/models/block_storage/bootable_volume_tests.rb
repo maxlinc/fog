@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("HP::BlockStorage | bootable volumes", ['hp', 'block_storage', 'volumes']) do
 
   @base_image_id = ENV["BASE_IMAGE_ID"] || 1242

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:joyent] | dataset requests", ["joyent"]) do
   @dataset_format = {
     "description" => String,

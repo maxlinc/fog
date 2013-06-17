@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:voxel] | image requests', ['voxel']) do
 
   @images_format = {

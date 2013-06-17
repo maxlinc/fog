@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::CDN[:aws] | invalidation", ['aws', 'cdn']) do
 
   tests("distributions#create").succeeds do

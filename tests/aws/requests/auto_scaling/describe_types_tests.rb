@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::AutoScaling | describe types requests', ['aws', 'auto_scaling']) do
 
   tests('success') do

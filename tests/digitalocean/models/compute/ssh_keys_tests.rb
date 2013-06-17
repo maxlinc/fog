@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:digitalocean] | ssh_keys collection', ['digitalocean']) do
 
   service =  Fog::Compute[:digitalocean]

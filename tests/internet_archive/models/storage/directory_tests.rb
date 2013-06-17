@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Storage[:internet_archive] | directory", ["internet_archive"]) do
 
   directory_attributes = {

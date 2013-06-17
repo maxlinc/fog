@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:libvirt]', ['libvirt']) do
 
   compute = Fog::Compute[:libvirt]

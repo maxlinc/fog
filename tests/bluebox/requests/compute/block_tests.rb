@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:bluebox] | block requests', ['bluebox']) do
 
   @block_format = {

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::DNS[:aws] | records", ['aws', 'dns']) do
   pending if Fog.mocking?
 

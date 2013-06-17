@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:openstack] | tenant requests', ['openstack']) do
 
   @tenant_format = {

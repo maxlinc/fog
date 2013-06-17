@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Network[:openstack] | networks", ['openstack']) do
   @network = Fog::Network[:openstack].networks.create(:name => 'net_name',
                                                       :shared => false,

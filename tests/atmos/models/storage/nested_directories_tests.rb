@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Storage[:atmos] | nested directories", ['atmos']) do
   atmos = Fog::Storage[:atmos]
   tests("create a directory with a / character").succeeds do

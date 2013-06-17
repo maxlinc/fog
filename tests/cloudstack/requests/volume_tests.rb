@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:cloudstack] | volume requests', ['cloudstack']) do
 
   @volumes_format = {

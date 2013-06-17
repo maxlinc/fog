@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::SES | verified email address requests', ['aws', 'ses']) do
 
   tests('success') do

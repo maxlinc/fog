@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver] | StorageRepositories collection', ['xenserver']) do
 
   conn = Fog::Compute[:xenserver]

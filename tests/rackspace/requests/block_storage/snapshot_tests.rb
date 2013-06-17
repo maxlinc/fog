@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Rackspace::BlockStorage | snapshot_tests', ['rackspace']) do
   timeout = Fog.mocking? ? 1 : 10
 

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:linode] | distribution requests', ['linode']) do
 
   @distributions_format = Linode::Compute::Formats::BASIC.merge({

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 for provider, config in storage_providers
 
   Shindo.tests("Storage[:#{provider}] | directories", [provider.to_s]) do

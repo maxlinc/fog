@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | internet_gateway requests', ['aws']) do
 
   @internet_gateways_format = {

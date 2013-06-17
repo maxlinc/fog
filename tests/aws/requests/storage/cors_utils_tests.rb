@@ -1,4 +1,3 @@
-require 'shindo_helper'
 require 'fog/aws/requests/storage/cors_utils'
 
 Shindo.tests('Fog::Storage::AWS | CORS utils', ["aws"]) do

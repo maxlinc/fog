@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::ELB | models', ['aws', 'elb']) do
   require 'fog'
   @availability_zones = Fog::Compute[:aws].describe_availability_zones('state' => 'available').body['availabilityZoneInfo'].collect{ |az| az['zoneName'] }

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Storage[:ninefold] | nested directories", ['ninefold']) do
 
   unless Fog.mocking?

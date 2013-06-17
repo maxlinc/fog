@@ -1,4 +1,3 @@
-require 'shindo_helper'
 require 'fog/rackspace/models/storage/file'
 
 Shindo.tests('Fog::Rackspace::Storage | file', ['rackspace']) do

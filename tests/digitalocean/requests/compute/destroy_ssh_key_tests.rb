@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:digitalocean] | destroy_ssh_key request', ['digitalocean', 'compute']) do
 
   service = Fog::Compute[:digitalocean]

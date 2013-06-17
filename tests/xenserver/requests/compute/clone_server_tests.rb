@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver] | clone_server request', ['xenserver']) do
 
   compute = Fog::Compute[:xenserver]

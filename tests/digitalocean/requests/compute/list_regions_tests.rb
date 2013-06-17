@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:digitalocean] | list_regions request', ['digitalocean', 'compute']) do
 
   # {"id":2,"name":"Amsterdam 1"}

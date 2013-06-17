@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ninefold] | address requests', ['ninefold']) do
 
   tests('success') do

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:clodo] | server requests', ['clodo']) do
 
   @ip_format = {

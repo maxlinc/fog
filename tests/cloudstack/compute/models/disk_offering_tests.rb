@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:cloudstack] | disk_offering", "cloudstack") do
   config = compute_providers[:cloudstack]
   compute = Fog::Compute[:cloudstack]

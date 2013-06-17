@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::DNS[:aws] | DNS requests', ['aws', 'dns']) do
 
   @org_zone_count = 0

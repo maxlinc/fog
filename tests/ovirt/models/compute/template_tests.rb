@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ovirt] | template model', ['ovirt']) do
 
   templates = Fog::Compute[:ovirt].templates

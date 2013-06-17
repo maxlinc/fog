@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ninefold] | load balancers', ['ninefold']) do
 
   # NOTE: all of these tests require you to have a vm built with a public IP address.

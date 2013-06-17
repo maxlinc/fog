@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::Elasticache | parameter groups', ['aws', 'elasticache']) do
   group_name = 'fog-test'
   description = 'Fog Test'

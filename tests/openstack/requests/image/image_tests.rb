@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Image[:openstack] | image requests', ['openstack']) do
   openstack = Fog::Identity[:openstack]
   @image_attributes = {

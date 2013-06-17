@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("AWS::RDS | parameter_groups", ['aws', 'rds']) do
 
   group_name = 'fog-test'

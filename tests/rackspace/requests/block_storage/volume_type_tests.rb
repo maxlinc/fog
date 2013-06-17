@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Rackspace::BlockStorage | volume_type_tests', ['rackspace']) do
   volume_type_format = {
     'name' => String,

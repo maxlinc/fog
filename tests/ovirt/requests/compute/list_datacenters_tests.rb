@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ovirt] | datacenters request', ['ovirt']) do
 
   compute = Fog::Compute[:ovirt]

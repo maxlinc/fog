@@ -1,4 +1,3 @@
-require 'shindo_helper'
 for provider, config in dns_providers
 
   # FIXME: delay/timing breaks things :(

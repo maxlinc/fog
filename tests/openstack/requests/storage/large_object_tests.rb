@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Storage[:openstack] | large object requests', ["openstack"]) do
 
   unless Fog.mocking?

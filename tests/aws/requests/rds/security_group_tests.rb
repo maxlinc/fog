@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::RDS | security group requests', ['aws', 'rds']) do
   suffix = rand(65536).to_s(16)
 

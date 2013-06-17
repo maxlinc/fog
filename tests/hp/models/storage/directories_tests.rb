@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Storage[:hp] | directories", ['hp', 'storage']) do
 
   collection_tests(Fog::Storage[:hp].directories, {:key => "fogdirtests"}, true)

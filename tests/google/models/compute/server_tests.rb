@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:google] | server model", ['google']) do
 
   tests('servers') do

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:openstack] | server requests', ['openstack']) do
 
   @detailed_server_format = {

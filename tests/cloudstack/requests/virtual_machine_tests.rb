@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:cloudstack] | virtual machine requests', ['cloudstack']) do
 
   @virtual_machines_format = {

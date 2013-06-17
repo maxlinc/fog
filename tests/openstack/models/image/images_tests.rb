@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Image[:openstack] | images", ['openstack']) do
   @instance = Fog::Image[:openstack].create_image({:name => "model test image"}).body
 

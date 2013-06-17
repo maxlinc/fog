@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:iam] | roles", ['aws','iam']) do
 
   pending if Fog.mocking?

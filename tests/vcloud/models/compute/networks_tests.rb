@@ -1,4 +1,3 @@
-require 'shindo_helper'
 require 'fog/vcloud/models/compute/networks'
 
 Shindo.tests("Vcloud::Compute | networks", ['vcloud']) do

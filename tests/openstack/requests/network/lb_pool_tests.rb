@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Network[:openstack] | lb_pool requests', ['openstack']) do
 
   @lb_pool_format = {

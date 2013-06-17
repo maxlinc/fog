@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:ovirt] | vm_create request", 'ovirt') do
 
   compute = Fog::Compute[:ovirt]

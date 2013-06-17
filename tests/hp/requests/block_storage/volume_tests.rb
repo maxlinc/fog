@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("HP::BlockStorage | volume requests", ['hp', 'block_storage', 'volumes']) do
 
   @volume_format = {

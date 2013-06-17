@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::ElasticBeanstalk | solution_stack_tests', ['aws', 'beanstalk']) do
 
   tests('success') do

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Storage[:hp] | files", ['hp', 'storage']) do
 
   file_attributes = {

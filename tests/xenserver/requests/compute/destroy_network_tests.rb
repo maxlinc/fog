@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:xenserver] | destroy_network request', ['xenserver']) do
 
   compute = Fog::Compute[:xenserver]

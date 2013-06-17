@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("AWS::RDS | security_group", ['aws', 'rds']) do
   group_name = 'fog-test'
   params = {:id => group_name, :description => 'fog test'}

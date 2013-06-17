@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | placement group requests', ['aws']) do
   @placement_group_format = {
     'requestId'         => String,

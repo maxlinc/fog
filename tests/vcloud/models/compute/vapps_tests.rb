@@ -1,4 +1,3 @@
-require 'shindo_helper'
 require 'fog/vcloud/models/compute/vapps'
 
 Shindo.tests("Vcloud::Compute | vapps", ['vcloud']) do

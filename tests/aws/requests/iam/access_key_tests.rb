@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::IAM | access key requests', ['aws']) do
 
   Fog::AWS[:iam].create_user('fog_access_key_tests')

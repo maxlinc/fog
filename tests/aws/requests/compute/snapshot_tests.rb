@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:aws] | snapshot requests', ['aws']) do
 
   @snapshot_format = {

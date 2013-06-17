@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::Compute[:aws] | monitor", ['aws']) do
 
   @instance = Fog::Compute[:aws].servers.new

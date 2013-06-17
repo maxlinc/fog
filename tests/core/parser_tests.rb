@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Parsers', 'core') do
 
   class TestParser < Fog::Parsers::Base

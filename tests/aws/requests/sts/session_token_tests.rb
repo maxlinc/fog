@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::STS | session tokens', ['aws']) do
 
 	@session_format = {

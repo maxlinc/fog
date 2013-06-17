@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog mocking', 'core') do
   before do
     @fog_was_mocked = Fog.mock?

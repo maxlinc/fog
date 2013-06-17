@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('AWS::Glacier | glacier vault requests', ['aws']) do
   pending if Fog.mocking?
 

@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Compute[:ibm] | image requests', ['ibm']) do
 
   @image_format  = {

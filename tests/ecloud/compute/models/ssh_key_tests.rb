@@ -1,4 +1,3 @@
-require 'shindo_helper'
 provider, config = :ecloud, compute_providers[:ecloud]
 
 Shindo.tests("Fog::Compute[:#{provider}] | ssh_keys", [provider.to_s]) do

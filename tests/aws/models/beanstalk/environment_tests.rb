@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests("Fog::AWS[:beanstalk] | environment", ['aws', 'beanstalk']) do
 
   pending if Fog.mocking?

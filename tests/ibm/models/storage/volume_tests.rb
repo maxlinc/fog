@@ -1,4 +1,3 @@
-require 'shindo_helper'
 Shindo.tests('Fog::Storage[:ibm] | volume', ['ibm']) do
 
   tests('success') do
