@@ -48,6 +48,24 @@ Also, ensure that you are using LibXML version 2.8.0, since there is an
 [issue829]: https://github.com/sparklemotion/nokogiri/issues/829
 [issue904]: https://github.com/sparklemotion/nokogiri/issues/904
 
+## Versioning
+
+This library aims to adhere to [Semantic Versioning 2.0.0][semver]. Violations
+of this scheme should be reported as bugs. Specifically, if a minor or patch
+version is released that breaks backward compatibility, that version should be
+immediately yanked and/or a new version should be immediately released that
+restores compatibility. Breaking changes to the public API will only be
+introduced with new major versions. As a result of this policy, you can (and
+should) specify a dependency on this gem using the [Pessimistic Version
+Constraint][pvc] with two digits of precision. For example:
+
+```ruby
+spec.add_dependency 'fog', '~> 1.0'
+```
+
+[semver]: http://semver.org/
+[pvc]: http://docs.rubygems.org/read/chapter/16#page74
+
 ## Collections
 
 A high level interface to each cloud is provided through collections, such as `images` and `servers`.
