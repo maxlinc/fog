@@ -74,7 +74,7 @@ module Shindo
     # @return [Boolean]
     def data_matches_schema(schema, options = {})
       test('data matches schema') do
-        validator = validator_for schema
+        validator = Fog::Schema::DataValidator.new
         valid = validator.validate(yield, schema, options)
         @message = validator.message unless valid
         valid
@@ -89,16 +89,11 @@ module Shindo
         else
           options = {:allow_extra_keys => true, :allow_optional_rules => true}
         end
-        validator = validator_for format
+        validator = Fog::Schema::DataValidator.new
         valid = validator.validate(yield, format, options)
         @message = validator.message unless valid
         valid
       end
-    end
-    
-    private
-    def validator_for (schema)
-      schema.is_a?(Pacto::Schema::ContractSchema) ? Fog::Schema::PactoDataValidator.new : Fog::Schema::DataValidator.new
     end
   end
 end

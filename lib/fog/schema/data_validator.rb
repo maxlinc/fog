@@ -1,5 +1,3 @@
-require 'Pacto'
-
 module Fog
   module Schema
     # This validates a data object against a Ruby based schema to see
@@ -150,25 +148,6 @@ module Fog
           end
           result
         end
-      end
-    end
-    
-    class PactoDataValidator
-      
-      def initialize
-        @message = nil
-      end
-
-      def validate(data, schema, options = {})
-        result = schema.validate(data)
-        unless result.empty?
-          @message = result.join "\n"
-        end
-        result.empty?
-      end
-
-      def message
-        @message
       end
     end
   end
