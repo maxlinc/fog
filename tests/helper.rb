@@ -1,4 +1,5 @@
 require 'simplecov'
+require 'pacto'
 
 if ENV['COVERAGE'] != 'false' && RUBY_VERSION != "1.9.2"
   require 'coveralls'
@@ -50,4 +51,8 @@ begin
 rescue LoadError
   Formatador.display_line("[yellow]Skipping tests for [bold]libvirt[/] [yellow]due to missing `ruby-libvirt` gem.[/]")
   Thread.current[:tags] << '-libvirt'
+end
+
+Pacto.configure do |c|
+  c.contracts_path = File.expand_path('tests/schemas')
 end
