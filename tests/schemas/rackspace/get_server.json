@@ -17,20 +17,20 @@
                 "server": {
                     "properties": {
                         "OS-DCF:diskConfig": {
-                            "required": true, 
+                            "required": false, 
                             "type": "string"
                         }, 
                         "OS-EXT-STS:power_state": {
-                            "required": true, 
+                            "required": false, 
                             "type": "number"
                         }, 
                         "OS-EXT-STS:task_state": {
-                            "required": true, 
+                            "required": false, 
                             "type": "null"
                         }, 
                         "OS-EXT-STS:vm_state": {
                             "default": "active", 
-                            "required": true, 
+                            "required": false, 
                             "type": "string"
                         }, 
                         "RAX-SI:image_schedule": {
@@ -40,7 +40,7 @@
                                     "type": "number"
                                 }
                             }, 
-                            "required": true, 
+                            "required": false, 
                             "type": "object"
                         }, 
                         "accessIPv4": {
