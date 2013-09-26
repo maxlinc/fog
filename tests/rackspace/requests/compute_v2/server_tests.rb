@@ -4,59 +4,13 @@ Shindo.tests('Fog::Compute::RackspaceV2 | server_tests', ['rackspace']) do
   image_id ||= Fog.mocking? ? service.images.first.id : service.images.find {|image| image.name =~ /Ubuntu/}.id # use the first Ubuntu image
   flavor_id = Fog.credentials[:rackspace_flavor_id] || service.flavors.first.id
 
-  link_format = {
-    'href' => String,
-    'rel' => String
-  }
+  list_servers_format = Pacto.load('rackspace/list_servers')
 
-  server_format = {
-    'id' => String,
-    'name' => String,
-    'hostId' => Fog::Nullable::String,
-    'created' => Fog::Nullable::String,
-    'updated' => Fog::Nullable::String,
-    'status' => Fog::Nullable::String,
-    'progress' => Fog::Nullable::Integer,
-    'user_id' => Fog::Nullable::String,
-    'tenant_id' => Fog::Nullable::String,
-    'links' => [link_format],
-    'metadata' => Fog::Nullable::Hash
-  }
+  get_server_format = Pacto.load('rackspace/get_server')
 
-  list_servers_format = {
-    'servers' => [server_format]
-  }
+  create_server_format = Pacto.load('rackspace/create_server')
 
-  get_server_format = {
-    'server' => server_format.merge({
-      'accessIPv4' => String,
-      'accessIPv6' => String,
-      'OS-DCF:diskConfig' => String,
-      'rax-bandwidth:bandwidth' => Fog::Nullable::Array,
-      'addresses' => Fog::Nullable::Hash,
-      'flavor' => {
-        'id' => String,
-        'links' => [link_format]
-      },
-      'image' => {
-        'id' => String,
-        'links' => [link_format]
-      }
-    })
-  }
-
-  create_server_format = {
-    'server' => {
-      'id' => String,
-      'adminPass' => String,
-      'links' => [link_format],
-      'OS-DCF:diskConfig' => String
-    }
-  }
-
-  rescue_server_format = {
-    'adminPass' => Fog::Nullable::String
-  }
+  rescue_server_format = Pacto.load('rackspace/rescue_server')
 
   tests('success') do
 
