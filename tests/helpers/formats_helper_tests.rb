@@ -5,6 +5,35 @@ Shindo.tests('test_helper', 'meta') do
     data_matches_schema(:welcome => String) { data }
   end
 
+  tests('Pacto::Contracts use Pacto for validation') do
+    data = {:welcome => "Hello" }
+    schema = Pacto.load('hello_contract')
+    data_matches_schema(schema) { data }
+  end
+
+  tests('Pacto supports many validations (json-schema support)') do
+    schema = Pacto.load('strict_contract')
+    # I can't test easily test this via the helper
+    # So I'm demoing behaving by calling the validator directly
+
+    validator = Fog::Schema::PactoDataValidator.new
+    returns(true, 'can validate complex schemas') do
+      validator.validate({'devices' => ['/dev/1', '/dev/2'] }, schema)
+    end
+    returns(true, 'detects missing required elements') do
+      valid = validator.validate({'devicess' => ['/dev/1', '/dev/2'] }, schema)
+      validator.message.include? "The property '#/' did not contain a required property of 'devices'"
+    end
+    returns(true, 'detects minimum number of items') do
+      valid = validator.validate({'devices' => ['/dev/1'] }, schema)
+      validator.message.include? "The property '#/devices' did not contain a minimum number of items 2"
+    end
+    returns(true, 'detects a regex mismatch') do
+      valid = validator.validate({'devices' => ['/abc/1', '/abc/2'] }, schema)
+      validator.message.include? "The property '#/devices/1' value \"/abc/2\" did not match the regex '^/dev/[^/]+(/[^/]+)*$'"
+    end
+  end
+
   tests('#data_matches_schema') do
     tests('when value matches schema expectation') do
       data_matches_schema({"key" => String}) { {"key" => "Value"} }
