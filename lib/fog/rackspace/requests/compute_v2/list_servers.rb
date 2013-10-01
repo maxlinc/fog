@@ -48,7 +48,7 @@ module Fog
 
       class Mock
         def list_servers
-          servers = self.data[:servers].values.map { |s| Fog::Rackspace::MockData.keep(s, 'id', 'name', 'hostId', 'created', 'updated', 'status', 'progress', 'user_id', 'tenant_id', 'links', 'metadata') }
+          servers = self.data[:servers].values.map { |s| Fog::Rackspace::MockData.keep(s, 'id', 'name', 'hostId', 'created', 'updated', 'status', 'progress', 'user_id', 'tenant_id', 'links', 'metadata', 'addresses', 'flavor', 'image', 'accessIPv4', 'accessIPv6') }
           response(:body => {"servers" => servers})
         end
       end

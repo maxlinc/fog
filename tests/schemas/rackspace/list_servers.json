@@ -28,19 +28,19 @@
                   "properties":{
                      "OS-DCF:diskConfig":{
                         "type":"string",
-                        "required":true
+                        "required":false
                      },
                      "OS-EXT-STS:power_state":{
                         "type":"number",
-                        "required":true
+                        "required":false
                      },
                      "OS-EXT-STS:task_state":{
                         "type":"null",
-                        "required":true
+                        "required":false
                      },
                      "OS-EXT-STS:vm_state":{
                         "type":"string",
-                        "required":true
+                        "required":false
                      },
                      "accessIPv4":{
                         "type":"string",
