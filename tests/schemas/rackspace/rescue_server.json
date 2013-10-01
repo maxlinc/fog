@@ -1,0 +1,24 @@
+{
+    "request": {
+        "headers": {
+            "Accept": "application/json"
+        },
+        "method": "GET",
+        "params": {},
+        "path": "/servers/id"
+    },
+    "response": {
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "status": 200,
+        "body": {
+            "properties": {
+                "adminPass": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        }
+    }
+}
