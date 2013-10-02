@@ -162,8 +162,8 @@ LOAD_BALANCER_FORMAT = {
     'virtualIps' => [VIRTUAL_IP_FORMAT],
     'nodes' => [SINGLE_NODE_FORMAT],
     'created' => { 'time' => String },
-    'updated' => { 'time' => String },
-    'contentCaching' => { 'enabled' => Fog::Boolean }
+    'updated' => { 'time' => String }
+    # 'contentCaching' => { 'enabled' => Fog::Boolean }
   }.merge(CONNECTION_LOGGING_FORMAT)
 }
 
