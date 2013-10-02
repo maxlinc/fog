@@ -13,9 +13,8 @@ module Fog
 
       class Mock
         def get_load_balancer(load_balancer_id)
-          response = Excon::Response.new
+          raise Fog::Rackspace::LoadBalancers::NotFound if load_balancer_id < 1
 
-          load_balancer_id ||= 0
           response = Excon::Response.new
           request_signature = WebMock::RequestSignature.new :get, "https://ord.loadbalancers.api.rackspacecloud.com/v1.0/0/loadbalancers/#{load_balancer_id}.json"
           request_signature.headers = {'Accept' => 'application/json'}
@@ -23,7 +22,6 @@ module Fog
           stub_response = contract.response.instantiate
           response.body = stub_response.body
           response.status = stub_response.status
-          require 'pry'; binding.pry
           response
          end
       end
