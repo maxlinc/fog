@@ -98,6 +98,41 @@ module Fog
           @rackspace_api_key = options[:rackspace_api_key]
           @rackspace_username = options[:rackspace_username]
           @rackspace_auth_url = options[:rackspace_auth_url]
+          @rackspace_must_reauthenticate = false
+          @connection_options     = options[:connection_options] || {}
+
+          # setup_custom_endpoint(options)
+
+          authenticate
+
+          @uri = URI.parse("https://dfw.loadbalancers.api.rackspacecloud.com/v1.0/0")
+          @persistent = options[:persistent] || false
+          @connection = Fog::Connection.new(endpoint_uri.to_s, @persistent, @connection_options)
+
+
+          # @rackspace_api_key = options[:rackspace_api_key]
+          # @rackspace_username = options[:rackspace_username]
+          # @rackspace_auth_url = options[:rackspace_auth_url]
+          # @auth_token = 'dummy'
+          # @uri = URI.parse("https://dfw.loadbalancers.api.rackspacecloud.com/v1.0/0")
+          # @persistent = options[:persistent] || false
+          # @connection_options = options[:connection_options] || {}
+          # @connection = Fog::Connection.new(@uri.to_s, @persistent, @connection_options)
+        end
+
+        def authenticate(options={})
+        end
+
+        def request(params, parse_json = true)
+          super
+        rescue Excon::Errors::NotFound => error
+          raise NotFound.slurp(error, self)
+        rescue Excon::Errors::BadRequest => error
+          raise BadRequest.slurp(error, self)
+        rescue Excon::Errors::InternalServerError => error
+          raise InternalServerError.slurp(error, self)
+        rescue Excon::Errors::HTTPStatusError => error
+          raise ServiceError.slurp(error, self)
         end
 
       end

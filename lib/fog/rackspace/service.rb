@@ -119,10 +119,11 @@ module Fog
       end
 
       def endpoint_uri_v2
-        @uri = @identity_service.service_catalog.get_endpoint(service_name, region)
+        @uri ||= @identity_service.service_catalog.get_endpoint(service_name, region)
       end
 
       def auth_token
+        @auth_token = 'dummy' if Fog.mocking?
         @auth_token || @identity_service.auth_token
       end
 

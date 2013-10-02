@@ -35,10 +35,13 @@ module Fog
       request :delete_user
 
       class Mock < Fog::Rackspace::Service
-        attr_reader :service_catalog
+        attr_reader :service_catalog, :auth_token
         
-        def request
-          Fog::Mock.not_implemented
+        def initialize(options={})
+        end
+
+        def authenticate(options={})
+          auth_token = "dummy"
         end
       end
 

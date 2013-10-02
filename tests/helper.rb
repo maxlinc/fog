@@ -56,3 +56,7 @@ end
 Pacto.configure do |c|
   c.contracts_path = File.expand_path('tests/schemas')
 end
+
+contract = Pacto.build_from_file('tests/schemas/rackspace/load_balancer.json', 'https://ord.loadbalancers.api.rackspacecloud.com')
+Pacto.register_contract(contract, :rackspace)
+Pacto.use(:rackspace)
