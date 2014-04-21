@@ -64,6 +64,12 @@ volume = cbs_service.volumes.create(:size => 100, :display_name => volume_name)
 puts "\nAttaching volume\n"
 attachment = server.attach_volume volume
 
+volume.wait_for(600)  do
+  print "."
+  STDOUT.flush
+  attached?
+end
+
 puts "\nVolume #{volume.display_name} has been attached to #{server.name} on device #{attachment.device}\n\n"
 puts "To detach volume please execute the detach_volume.rb script\n\n"
 
