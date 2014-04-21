@@ -84,7 +84,7 @@ if delete_confirm.downcase ==  'y'
   volume.wait_for(600)  do
     print "."
     STDOUT.flush
-    ready? && attachments.empty?
+    ready?
   end
 
   volume.destroy
